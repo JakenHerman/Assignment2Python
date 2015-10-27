@@ -1,0 +1,27 @@
+'''
+Created on Oct 27, 2015
+
+@author: jakenherman
+'''
+
+import turtle
+
+turtle = turtle.Turtle()
+turtle.speed(3)
+
+
+def circle(radius, cx = None, cy = None, color = 'black', fill = False):
+    turtle.penup()
+    turtle.goto(cx, cy)
+    turtle.color(color)
+    
+    if fill is True:
+        turtle.begin_fill()
+        turtle.circle(radius = radius, extent = None, steps = None)
+        turtle.end_fill()
+    else:
+        turtle.circle(radius = radius, extent = None, steps = None)
+    return
+
+
+    

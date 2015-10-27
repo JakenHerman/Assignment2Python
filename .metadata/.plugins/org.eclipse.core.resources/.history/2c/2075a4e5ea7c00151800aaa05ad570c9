@@ -1,0 +1,14 @@
+'''
+Created on Oct 27, 2015
+
+@author: jakenherman
+'''
+
+from Graphics2D import GraphicsAndPatternLibrary
+
+def main():
+    GraphicsAndPatternLibrary.circle(50, color = 'blue')
+    GraphicsAndPatternLibrary.circle(60, -200, -200, blue, True)
+    return
+
+main()

@@ -1,0 +1,16 @@
+'''
+Created on Oct 27, 2015
+
+@author: jakenherman
+'''
+
+import turtle
+
+turtle = turtle.Turtle()
+turtle.speed(3)
+
+def circle(radius, cx, cy, color, fill):
+    turtle.circle(radius = radius, extent = None, Steps = None)
+    
+circle(50)
+    

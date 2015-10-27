@@ -1,0 +1,16 @@
+'''
+Created on Oct 27, 2015
+
+@author: jakenherman
+'''
+
+import turtle
+from Graphics2D import GraphicsAndPatternLibrary
+
+def main():
+    turtle.showturtle()
+    for i in range(30, 60):
+        GraphicsAndPatternLibrary.circle(i)
+    return
+
+main()
