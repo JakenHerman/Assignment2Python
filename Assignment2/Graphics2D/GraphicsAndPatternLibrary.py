@@ -13,7 +13,7 @@ turtle.speed(3)
 def circle(radius = 50, cx = None, cy = None, color = 'black', fill = False):
     
     turtle.penup()
-    
+
     if cx != None or cy != None:
         turtle.goto(int(cx), int(cy))
     
@@ -27,7 +27,7 @@ def circle(radius = 50, cx = None, cy = None, color = 'black', fill = False):
         turtle.begin_fill()
         turtle.circle(radius)
         turtle.end_fill()
-        turtle.getscreen()._root.mainloop() #keep window open until close
+        
 
     else:
         turtle.pendown()
@@ -35,3 +35,70 @@ def circle(radius = 50, cx = None, cy = None, color = 'black', fill = False):
         
     return
 
+def rectangle(length = 50, width = 50, x = None, y = None, color = 'black', fill = False):  
+    
+    turtle.penup()
+    
+    if x != None or y != None:
+        turtle.goto(int(x), int(y))
+    
+    turtle.pencolor(color)
+    turtle.fillcolor(color)
+    
+    if fill is True:
+        turtle.pendown()
+        turtle.begin_fill()
+        turtle.forward(width)
+        turtle.left(90)
+        turtle.forward(length)
+        turtle.left(90)
+        turtle.forward(width)
+        turtle.left(90)
+        turtle.forward(length)
+        turtle.left(90)
+        turtle.end_fill()
+        
+    else:
+        turtle.pendown()
+        turtle.forward(width)
+        turtle.left(90)
+        turtle.forward(length)
+        turtle.left(90)
+        turtle.forward(width)
+        turtle.left(90)
+        turtle.forward(length)
+        turtle.left(90)
+    
+    return
+
+def polygon(side = 50, angle = None, xstart = None, ystart = None, numberSides = 3, color = 'black', fill = False):  
+    
+    turtle.penup()
+    
+    if angle != None:
+        turtle.left(angle)
+        
+    if xstart != None or ystart != None:
+        turtle.goto(int(xstart), int(ystart))
+    
+    turtle.pencolor(color)
+    turtle.fillcolor(color)
+    
+    if fill is True:
+        turtle.pendown()
+        turtle.begin_fill()
+        turtle.circle(side, extent = None, steps = numberSides)
+        turtle.end_fill()
+        
+        if angle != None:
+            turtle.right(angle)
+        
+    
+    else:
+        turtle.pendown()
+        turtle.circle(side, extent = None, steps = numberSides)
+        
+        if angle != None:
+            turtle.right(angle)
+    
+    return
