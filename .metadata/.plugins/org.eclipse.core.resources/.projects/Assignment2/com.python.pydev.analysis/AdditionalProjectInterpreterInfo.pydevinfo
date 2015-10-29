@@ -1,22 +1,25 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/jakenherman/Desktop/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Assignment2/com.python.pydev.analysis/v2_indexcache
-Graphics2D.MyDrawing|1445980628000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/MyDrawing.py
-Graphics2D.GraphicsAndPatternLibrary|1445980658000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/GraphicsAndPatternLibrary.py
+Graphics2D.MyDrawing|1445982765000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/MyDrawing.py
+Graphics2D.GraphicsAndPatternLibrary|1446007624000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/GraphicsAndPatternLibrary.py
 Graphics2D.__init__|1445976316000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/__init__.py
 -- END DISKCACHE
 -- START DICTIONARY
-2
-2=Graphics2D.MyDrawing
-1=Graphics2D.GraphicsAndPatternLibrary
+3
+1=Graphics2D.MyDrawing
+3=MyTurtle
+2=Graphics2D.GraphicsAndPatternLibrary
 -- END DICTIONARY
 -- START TREE 1
-4
-cir|1|circle!10@
-mai|1|main!18@
-rec|1|rectangle!10@
-tur|1|turtle!11@
+3
+mai|1|main!10@
+myt|1|MyTurtle!17@
+tur|1|turtle!19@
 -- END TREE
 -- START TREE 2
-0
+3
+cir|1|circle!3&18@
+pol|1|polygon!3&18@
+rec|1|rectangle!3&18@
 -- END TREE
