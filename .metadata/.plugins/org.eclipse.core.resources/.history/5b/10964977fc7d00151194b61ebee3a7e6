@@ -21,7 +21,7 @@ class MyTurtle:
         
     
         if color != 'black':
-            turtle.pencolor(color) 
+            turtle.pencolor(color)
         
         if fill is True:
             turtle.pendown()
@@ -112,6 +112,5 @@ class MyTurtle:
         turtle.penup()
         turtle.pencolor(color)
         turtle.goto(int(x), int(y))
-        turtle.pendown()
         turtle.write(text)
         return

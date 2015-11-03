@@ -21,7 +21,7 @@ class MyTurtle:
         
     
         if color != 'black':
-            turtle.pencolor(color) 
+            turtle.pencolor(color)
         
         if fill is True:
             turtle.pendown()
@@ -105,13 +105,4 @@ class MyTurtle:
             if angle != None:
                 turtle.right(angle)
         
-        return
-    
-    @staticmethod
-    def writeText(x = None, y = None, text = None, color = 'black'):
-        turtle.penup()
-        turtle.pencolor(color)
-        turtle.goto(int(x), int(y))
-        turtle.pendown()
-        turtle.write(text)
         return

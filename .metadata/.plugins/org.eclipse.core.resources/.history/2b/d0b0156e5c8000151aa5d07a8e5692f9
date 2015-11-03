@@ -112,6 +112,5 @@ class MyTurtle:
         turtle.penup()
         turtle.pencolor(color)
         turtle.goto(int(x), int(y))
-        turtle.pendown()
         turtle.write(text)
         return
