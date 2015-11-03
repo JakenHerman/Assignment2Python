@@ -20,9 +20,9 @@ class Room:
     def Room(x, y, l, w, n):
         Room.setX(x)
         Room.setY(y)
-        Room.setLength(l)
-        Room.setWidth(w)
-        Room.setName(n)
+        Room.setLength(Room().length)
+        Room.setWidth(Room().width)
+        Room.setName(Room().name)
         
         GraphicsAndPatternLibrary.MyTurtle.rectangle(l, w, x, y)
         GraphicsAndPatternLibrary.MyTurtle.writeText(x, y, n)
@@ -88,13 +88,6 @@ class Table:
     
     @staticmethod
     def Table(x, y, s, l, w, c):
-        Table.setX(x)
-        Table.setY(y)
-        Table.setShape(s)
-        Table.setSide1(l)
-        Table.setSide2(w)
-        Table.setColor(c)
-        
         pass
     @staticmethod
     def setX(x):
@@ -162,12 +155,6 @@ class Sofa:
         pass
     @staticmethod
     def Sofa(x, y, l, w, c):
-        Sofa.setX(x)
-        Sofa.setY(y)
-        Sofa.setLength(l)
-        Sofa.setWidth(w)
-        Sofa.setColor(c)
-        
         pass
     @staticmethod
     def setX(x):
