@@ -7,12 +7,12 @@ Created on Oct 27, 2015
 from Graphics2D import GraphicsAndPatternLibrary
 
 def main():
-    GraphicsAndPatternLibrary.circle()
-    GraphicsAndPatternLibrary.circle(60, -200, -200, 'blue', True)
-    GraphicsAndPatternLibrary.rectangle()
-    GraphicsAndPatternLibrary.rectangle(60, 70, 100, 100, 'red', True)
-    GraphicsAndPatternLibrary.polygon()
-    GraphicsAndPatternLibrary.polygon(70, 45, -200, 200, 6, 'violet', True)
+    GraphicsAndPatternLibrary.MyTurtle.circle()
+    GraphicsAndPatternLibrary.MyTurtle.circle(60, -200, -200, 'blue', True)
+    GraphicsAndPatternLibrary.MyTurtle.rectangle()
+    GraphicsAndPatternLibrary.MyTurtle.rectangle(60, 70, 100, 100, 'red', True)
+    GraphicsAndPatternLibrary.MyTurtle.polygon()
+    GraphicsAndPatternLibrary.MyTurtle.polygon(70, 45, -200, 200, 6, 'violet', True)
     
     
     return

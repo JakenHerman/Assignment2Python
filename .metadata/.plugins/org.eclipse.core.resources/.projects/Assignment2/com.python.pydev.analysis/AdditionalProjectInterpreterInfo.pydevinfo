@@ -2,30 +2,48 @@
 -- START DISKCACHE_2
 /Users/jakenherman/Desktop/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Assignment2/com.python.pydev.analysis/v2_indexcache
 Graphics2D.MyDrawing|1445982765000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/MyDrawing.py
-Graphics2D.FurnitureComponents|1446357216000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/FurnitureComponents.py
+Graphics2D.FurnitureComponents|1446533418000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/FurnitureComponents.py
 Graphics2D.GraphicsAndPatternLibrary|1446357017000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/GraphicsAndPatternLibrary.py
 Graphics2D.__init__|1445976316000000000|/Users/jakenherman/Desktop/workspace/Assignment2/Graphics2D/__init__.py
 -- END DISKCACHE
 -- START DICTIONARY
-5
+7
 1=Graphics2D.MyDrawing
-5=MyTurtle
+6=Sofa
+7=MyTurtle
+5=Table
 2=Graphics2D.GraphicsAndPatternLibrary
 3=Graphics2D.FurnitureComponents
 4=Room
 -- END DICTIONARY
 -- START TREE 1
-4
+6
 mai|1|main!10@
 myt|1|MyTurtle!17@
 roo|1|Room!25@
+sof|1|Sofa!25@
+tab|1|Table!25@
 tur|1|turtle!19@
 -- END TREE
 -- START TREE 2
-5
-__i|1|__init__!4&26@
-cir|1|circle!5&18@
-pol|1|polygon!5&18@
-rec|1|rectangle!5&18@
-wri|1|writeText!5&18@
+19
+__i|3|__init__!4&26@__init__!5&26@__init__!6&26@
+cir|1|circle!7&18@
+col|2|color!5&27@color!6&27@
+get|16|getColor!5&26@getColor!6&26@getX!4&26@getX!5&26@getX!6&26@getShape!5&26@getName!4&26@getSide2!5&26@getWidth!4&26@getWidth!6&26@getSide1!5&26@getY!4&26@getY!5&26@getY!6&26@getLength!4&26@getLength!6&26@
+len|2|length!4&27@length!6&27@
+nam|1|name!4&27@
+pol|1|polygon!7&18@
+rec|1|rectangle!7&18@
+roo|1|Room!4&26@
+set|16|setLength!4&26@setWidth!4&26@setLength!6&26@setWidth!6&26@setX!4&26@setX!5&26@setX!6&26@setName!4&26@setY!4&26@setY!5&26@setY!6&26@setSide1!5&26@setShape!5&26@setColor!5&26@setColor!6&26@setSide2!5&26@
+sha|1|shape!5&27@
+sho|3|show!4&26@show!5&26@show!6&26@
+sid|2|side2!5&27@side1!5&27@
+sof|1|Sofa!6&26@
+tab|1|Table!5&26@
+wid|2|width!4&27@width!6&27@
+wri|1|writeText!7&18@
+x|3|x!4&27@x!5&27@x!6&27@
+y|3|y!4&27@y!5&27@y!6&27@
 -- END TREE
