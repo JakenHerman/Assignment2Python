@@ -1,0 +1,204 @@
+'''
+Created on Nov 1, 2015
+
+@author: jakenherman
+'''
+
+from Graphics2D import GraphicsAndPatternLibrary
+
+class Room:
+    x = float(0)
+    y = float(0)
+    length = float(0)
+    width = float(0)
+    name = None
+    
+    def __init__(self):
+        pass
+    
+    @staticmethod
+    def Room(x, y, l, w, n):
+        Room.setX(x)
+        Room.setY(y)
+        Room.setLength(Room().length)
+        Room.setWidth(Room().width)
+        Room.setName(Room().name)
+        
+        GraphicsAndPatternLibrary.MyTurtle.rectangle(l, w, x, y)
+        GraphicsAndPatternLibrary.MyTurtle.writeText(x, y, n)
+        pass
+    
+    
+    @staticmethod
+    def setX(x):
+        Room.x = x
+        pass
+    @staticmethod
+    def setY(y):
+        Room.y = y
+        pass
+    @staticmethod
+    def setLength(length):
+        Room.length = length
+        pass
+    @staticmethod
+    def setWidth(width):
+        Room.width = width
+        pass
+    @staticmethod
+    def setName(name):
+        Room.name = name
+        pass
+    @staticmethod
+    def show():
+        pass
+    
+    #get methods
+    @staticmethod
+    def getX():
+        return Room.x
+        pass
+    @staticmethod
+    def getY():
+        return Room.y
+        pass
+    @staticmethod
+    def getLength():
+        return Room.length
+        pass
+    @staticmethod
+    def getWidth():
+        return Room.width
+        pass
+    @staticmethod
+    def getName():
+        return Room.name
+        pass
+    
+class Table:
+    x = 0
+    y = 0
+    shape = 0
+    side1 = 0
+    side2 = 0
+    color = 'black'
+    
+    def __init__(self):
+        pass
+    
+    @staticmethod
+    def Table(x, y, s, l, w, c):
+        pass
+    @staticmethod
+    def setX(x):
+        Table.x = x
+        pass
+    @staticmethod
+    def setY(y):
+        Table.y = y
+        pass
+    @staticmethod
+    def setShape(shape):
+        Table.shape = shape
+        pass
+    @staticmethod
+    def setSide1(side1):
+        Table.side1 = side1
+        pass
+    @staticmethod
+    def setSide2(side2):
+        Table.side2 = side2
+        pass
+    @staticmethod
+    def setColor(color):
+        Table.color = color
+        pass
+    @staticmethod
+    def show():
+        pass
+    
+    #get methods later
+    @staticmethod
+    def getX():
+        return Table.x
+        pass
+    @staticmethod
+    def getY():
+        return Table.y
+        pass
+    @staticmethod
+    def getShape():
+        return Table.shape
+        pass
+    @staticmethod
+    def getSide1():
+        return Table.side1
+        pass
+    @staticmethod
+    def getSide2():
+        return Table.side2
+        pass
+    @staticmethod
+    def getColor():
+        return Table.color
+        pass
+
+    
+class Sofa:
+    x = 0
+    y = 0
+    length = 0
+    width = 0
+    color = 'black'
+    
+    def __init__(self):
+        pass
+    @staticmethod
+    def Sofa(x, y, l, w, c):
+        pass
+    @staticmethod
+    def setX(x):
+        Sofa.x = x
+        pass
+    @staticmethod
+    def setY(y):
+        Sofa.y = y
+        pass
+    @staticmethod
+    def setLength(length):
+        Sofa.length = length
+        pass
+    @staticmethod
+    def setWidth(width):
+        Sofa.width = width
+        pass
+    @staticmethod
+    def setColor(color):
+        Sofa.color = color
+        pass
+    @staticmethod
+    def show():
+        pass
+    
+    #get methods
+    @staticmethod
+    def getX():
+        return Sofa.x
+        pass
+    @staticmethod
+    def getY():
+        return Sofa.y
+        pass
+    @staticmethod
+    def getLength():
+        return Sofa.length
+        pass
+    @staticmethod
+    def getWidth():
+        return Sofa.width
+        pass
+    @staticmethod
+    def getColor():
+        return Sofa.color
+        pass
+

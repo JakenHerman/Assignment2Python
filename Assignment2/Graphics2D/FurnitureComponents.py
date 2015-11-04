@@ -13,19 +13,13 @@ class Room:
     width = float(0)
     name = None
     
-    def __init__(self):
-        pass
-    
     @staticmethod
-    def Room(x, y, l, w, n):
+    def __init__(x, y, l, w, n):
         Room.setX(x)
         Room.setY(y)
         Room.setLength(l)
         Room.setWidth(w)
         Room.setName(n)
-        
-        GraphicsAndPatternLibrary.MyTurtle.rectangle(l, w, x, y)
-        GraphicsAndPatternLibrary.MyTurtle.writeText(x, y, n)
         pass
     
     
@@ -51,6 +45,9 @@ class Room:
         pass
     @staticmethod
     def show():
+        GraphicsAndPatternLibrary.MyTurtle.rectangle(Room.length, Room.width, Room.x, Room.y)
+        GraphicsAndPatternLibrary.MyTurtle.writeText(Room.x, (Room.y + 10), Room.name)
+        GraphicsAndPatternLibrary.MyTurtle.writeText(Room.x, Room.y, (str(Room.length) + '*' + str(Room.width)))
         pass
     
     #get methods
@@ -83,11 +80,8 @@ class Table:
     side2 = 0
     color = 'black'
     
-    def __init__(self):
-        pass
-    
     @staticmethod
-    def Table(x, y, s, l, w, c):
+    def __init__(x, y, s, l, w, c):
         Table.setX(x)
         Table.setY(y)
         Table.setShape(s)
@@ -118,10 +112,16 @@ class Table:
         pass
     @staticmethod
     def setColor(color):
-        Table.color = color
+        Table.color = str(color)
         pass
     @staticmethod
     def show():
+        if Table.shape == 4:
+            GraphicsAndPatternLibrary.MyTurtle.rectangle(Table.side1, Table.side2, Table.x, Table.y, Table.color, True)
+            GraphicsAndPatternLibrary.MyTurtle.writeText((Table.x - 10), (Table.y - 10), "Table", 'black')
+        else:
+            GraphicsAndPatternLibrary.MyTurtle.polygon(Table.side1, None, Table.x, Table.y, Table.shape, Table.color, True)
+            GraphicsAndPatternLibrary.MyTurtle.writeText(Table.x, Table.y, "Table", 'black')
         pass
     
     #get methods later
@@ -158,10 +158,8 @@ class Sofa:
     width = 0
     color = 'black'
     
-    def __init__(self):
-        pass
     @staticmethod
-    def Sofa(x, y, l, w, c):
+    def __init__(x, y, l, w, c):
         Sofa.setX(x)
         Sofa.setY(y)
         Sofa.setLength(l)
@@ -187,10 +185,12 @@ class Sofa:
         pass
     @staticmethod
     def setColor(color):
-        Sofa.color = color
+        Sofa.color = str(color)
         pass
     @staticmethod
     def show():
+        GraphicsAndPatternLibrary.MyTurtle.rectangle(Sofa.length, Sofa.width, Sofa.x, Sofa.y, Sofa.color, True)
+        GraphicsAndPatternLibrary.MyTurtle.writeText((Sofa.x - 10), (Sofa.y - 10), "Sofa", 'black')
         pass
     
     #get methods
