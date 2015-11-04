@@ -1,0 +1,19 @@
+'''
+Created on Nov 4, 2015
+
+@author: jakenherman
+'''
+
+from FurnitureComponents import *
+from Graphics2D import *
+from GraphicsAndPatternLibrary import *
+import turtle
+
+def main():
+    space = Room(-150, -150, 300, 260, "")
+    room1 = Room(50, 50, 20, 20, "Family")
+    
+    space.show()
+    room1.show()
+    
+main()
